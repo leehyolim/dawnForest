@@ -18,6 +18,7 @@
 </head>
 <body>
 	<div id="wrapper">
+	
 		<div id="header">
 		<div id="minimenu">
 			<ul>
@@ -105,7 +106,84 @@
 
 			</div>
 		</div>
-		<div id="mainbanner">메인 배너 박스</div>
+	
+		
+		<div class="mainbanner">
+			<div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+			<ul>
+			<li style="background:url(img/Test_mainbanner1.jpg) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt" style="letter-spacing:-1px;">
+					<strong>F1</strong>
+					가구는 과학이다.
+				</div>
+			</li>
+			<li style="background:url(img/Test_mainbanner2.jpg) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>F2</strong>
+					가구는 안전이다.
+				</div>
+			</li>
+			<li style="background:url(이미지경로) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>F3</strong>
+					가구는 생활이다.
+				</div>
+			</li>
+			<li style="background:url(이미지경로) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>F4</strong><pre></pre>
+					가구는 재미다.
+				</div>
+			</li>
+			<li style="background:url(이미지경로) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>F5</strong>
+					가구는 새벽숲이다.
+				</div>
+			</li>
+			</ul>
+			<p class="cnt"></p>
+		</div>
+
+		<script type="text/javascript">
+		$( document ).ready(function() {
+			var jcarousel = $('.mainbanner .jcarousel');
+			jcarousel
+			.on('jcarousel:reload jcarousel:create', function () {
+				var width = jcarousel.innerWidth();
+				jcarousel.jcarousel('items').css('width', width + 'px');
+			})
+			.jcarousel({
+				animation: 'slow',
+				wrap : 'circular'
+			})
+			$('.mainbanner .cnt')
+			.on('jcarouselpagination:active', 'a', function() { $(this).addClass('selected'); })
+			.on('jcarouselpagination:inactive', 'a', function() { $(this).removeClass('selected'); })
+			.jcarouselPagination();
+			$('[data-jcarousel]').each(function() {
+				var el = $(this);
+				el.jcarousel(el.data());
+			});
+
+			$('[data-jcarousel-control]').each(function() {
+				var el = $(this);
+				el.jcarouselControl(el.data());
+			});
+			$.ajax({
+				url: "count_prc.php",
+				type: "POST",
+				success: function (res) {			
+				}
+			});					
+		});
+		</script>
+		
 		<div id="body">
 			<div id="main1">
 				<div id="mSimulation">시뮬레이션</div>
@@ -119,9 +197,11 @@
 				<div id="mTwitter">트위터</div>
 			</div>
 		</div>
+		
+		
 		<div id="footer">바닥 내용들...</div>
 	</div>
-
+</div>
 
 </body>
 </html>

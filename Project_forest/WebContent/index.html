@@ -7,14 +7,14 @@
 <meta property="og:title" content="한샘 비츠">
 <meta property="og:description" content="한샘비츠, 한샘오피스본사, 한샘비츠 본사, 한샘이만든 사무용가구, 한샘이 만들면 다릅니다.">
 <title>비츠</title>
-<link rel="stylesheet" type="text/css" href="C:/Users/Hyolim/Desktop/project/css/ui.css">
-<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/jquery-1.8.1.min.js"></script>
-<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/jquery.jcarousel.js"></script>
-<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/navigation.js"></script>
-<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/form.js"></script>
-<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/ui.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/ui.css">
+<script type="text/javascript" src="./js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="./js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="./js/navigation.js"></script>
+<script type="text/javascript" src="./js/form.js"></script>
+<script type="text/javascript" src="./js/ui.js"></script>
 <style>
-*{
+{
 	border: black 1px;
 }
 
@@ -29,15 +29,15 @@ var nameOfCookie = name + "=";
 var x = 0;
 while ( x <= document.cookie.length )
 {
-var y = (x+nameOfCookie.length);
-if ( document.cookie.substring( x, y ) == nameOfCookie ) {
-if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
-endOfCookie = document.cookie.length;
-return unescape( document.cookie.substring( y, endOfCookie ) );
-ㅋif ( x == 0 )
-break;
+	var y = (x+nameOfCookie.length);
+	if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+		if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+		endOfCookie = document.cookie.length;
+		return unescape( document.cookie.substring( y, endOfCookie ) );
+		if ( x == 0 )
+			break;
 }
-return "";
+	return "";
 }
 
 function popup()

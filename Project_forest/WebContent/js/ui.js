@@ -1,16 +1,15 @@
 $(document).ready(function() {
 
 	/* main keyvisual */
-	$(".mKeymain").hover(
+	$(".mainbanner").hover(
 		function(){
-			$(".mKeymain .jcarousel-control-prev, .mKeymain .jcarousel-control-next").fadeTo(300,1);
+			$(".mainbanner .jcarousel-control-prev, .mainbanner .jcarousel-control-next").fadeTo(300,1);
 		},
 		function(){
-			$(".mKeymain .jcarousel-control-prev, .mKeymain .jcarousel-control-next").fadeTo(300,0);
+			$(".mainbanner .jcarousel-control-prev, .mainbanner .jcarousel-control-next").fadeTo(300,0);
 		}
 	);
-	/* //main keyvisual */
-
+	
 	/* tab */
 	$(".jsTab2 li").click(function(){
 		if ( $(this).hasClass('e') == false)
