@@ -69,9 +69,6 @@
 					<strong><a href="/exhibition/exhibition_ahyeon.php">사무실 가구</a></strong>
 					<div>
 						<ul>
-						<!--
-						<li><a href="/exhibition/exhibition_main.php">쇼룸</a></li>
-						-->
 						<li><a href="/exhibition/exhibition_ahyeon.php">수도권 (경기, 서울)</a></li>
 						<li><a href="/exhibition/exhibition_busanCenter.php">영남</a></li>
 						<li><a href="/exhibition/exhibition_daejeon.php">충청</a></li>
@@ -107,7 +104,7 @@
 			</div>
 		</div>
 	
-		
+		<!-- 중앙베너 애니메이션부분 시작-->
 		<div class="mainbanner">
 			<div data-jcarousel="true" data-wrap="circular" class="jcarousel">
 			<ul>
@@ -149,7 +146,7 @@
 			</ul>
 			<p class="cnt"></p>
 		</div>
-
+		
 		<script type="text/javascript">
 		$( document ).ready(function() {
 			var jcarousel = $('.mainbanner .jcarousel');
@@ -159,30 +156,19 @@
 				jcarousel.jcarousel('items').css('width', width + 'px');
 			})
 			.jcarousel({
-				animation: 'slow',
+				animation: 'slow', //슬라이드 속도
 				wrap : 'circular'
 			})
 			$('.mainbanner .cnt')
 			.on('jcarouselpagination:active', 'a', function() { $(this).addClass('selected'); })
 			.on('jcarouselpagination:inactive', 'a', function() { $(this).removeClass('selected'); })
 			.jcarouselPagination();
-			$('[data-jcarousel]').each(function() {
-				var el = $(this);
-				el.jcarousel(el.data());
-			});
-
-			$('[data-jcarousel-control]').each(function() {
-				var el = $(this);
-				el.jcarouselControl(el.data());
-			});
-			$.ajax({
-				url: "count_prc.php",
-				type: "POST",
-				success: function (res) {			
-				}
-			});					
+				
 		});
+		
 		</script>
+		<!-- 중앙베너 애니메이션부분 끝 -->
+		
 		
 		<div id="body">
 			<div id="main1">
