@@ -5,165 +5,104 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link href="./css/test.css" rel="stylesheet" type="text/css">
+<script src="./js/jquery-1.8.1.min.js" type="text/javascript" ></script>
+<script src="./js/jquery.jcarousel.js" type="text/javascript" ></script>
+<script src="./js/navigation.js" type="text/javascript" ></script>
+<script src="./js/form.js" type="text/javascript" ></script>
+<script type="text/javascript" src="./js/ui.js"></script>
 <style>
 
-div {
-
-	border: solid 1px;
-	
-	
-}
-
-#wrapper {
-	width: 1300px;
-	margin: auto;
-	height: 2000px;
-	position: relative;
-}
-
-#header {
-	width: 1100px;
-	height: 180px;
-	position: relative;
-	left: 100px;
-}
-
-#mainbanner {
-	width: 1300px;
-	height: 500px;
-	position: relative;
-}
-
-#main1 {
-	background-color: lightblue;
-	width: 1000px;
-	height: 280px;
-	float: left;
-	position: static;
-	padding: 25px;
-	margin-left: 125px;
-
-	/*position: relative;
-                left: 50px;
-                top: -5px;*/
-}
-
-#main2 {
-	background-color: yellowgreen;
-	width: 1000px;
-	height: 350px;
-	float: left;
-	position: static;
-	padding: 25px;
-	margin-left: 125px;
-	/*position: relative;
-                left: 50px;
-                top: -5px;*/
-}
-
-#footer {
-	width: 1300px;
-	height: 500px;
-	clear: both;
-}
-
-#addfixed {
-	width: 100px;
-	height: 300px;
-	background-color: greenyellow;
-	position: fixed;
-	left: 20px;
-	top: 100px;
-}
-
-#boxabs {
-	width: 1300px;
-	height: 450px;
-	background-color: pink;
-	margin-top: 20px;
-	margin-left: 20px;
-}
-
-li {
-	display: inline-block;
-}
-
-#navi {
-	width: 1000px;
-	height: 50px;
-	float: right;
-	position: relative;
-	top: 130px;
-	right: 50px;
-}
-
-#mSimulation {
-	width: 580px;
-	height: 300px;
-	float: left;
-	position: relative;
-}
-
-#mReview {
-	width: 400px;
-	height: 300px;
-	float: right;
-	position: relative;
-}
-
-#mAs {
-	width: 330px;
-	height: 335px;
-	float: left;
-	position: relative;
-}
-
-#mNews {
-	width: 650px;
-	height: 130px;
-	float: right;
-	position: relative;
-}
-
-#mBox {
-	width: 430px;
-	height: 200px;
-	float: left;
-	position: relative;
-	left: 20px;
-}
-
-#mFacebook {
-	width: 150px;
-	height: 60px;
-	float: right;
-	position: relative;
-	top: 30px;
-	right: 20px;
-}
-
-#mTwitter {
-	width: 150px;
-	height: 60px;
-	float: left;
-	position: relative;
-	top: 60px;
-	left: 55px;
-}
 </style>
 
 </head>
 <body>
 	<div id="wrapper">
 		<div id="header">
-			<div id="navi">
-				<ul>
-					<li>침실 가구</li>
-					<li>거실 가구</li>
-					<li>주방 가구</li>
-					<li>어린이 가구</li>
-					<li>사무용 가구</li>
+		<div id="minimenu">
+			<ul>
+				<li>로그인 | </li>
+				<li>메뉴2 | </li>
+				<li>메뉴3 | </li>
+				<li>메뉴4 | </li>
+				<li>메뉴5</li>
+			</ul>
+		</div>
+		<center><img src="./img/logo_edit1.png" id="logo"></center>
+			<div class="navi">
+				<ul id="gnbNavi">
+				<li class="a ">
+					<strong><a href="/product/product.php">침실 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/product/workstation.php">침대</a></li>
+                        <li><a href="/product/dormitory.php">화장대</a></li>
+						<li><a href="/product/executive.php">협탁</a></li>
+						<li><a href="/product/soho.php">서랍장</a></li>
+						<li><a href="/product/partition_terra.php">매트리스</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="b ">
+					<strong><a href="/result/office.php">거실 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/result/office.php">거실장</a></li>
+						<li><a href="/result/school.php">소파</a></li>
+						<li><a href="/result/hospital.php">소파테이블</a></li>
+						<li><a href="/result/domitory.php">장식장</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="c ">
+					<strong><a href="/story/story_main.php">주방 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/story/story_interior.php">4인식탁세트</a></li>
+						<li><a href="/story/trend.php">6/8인식탁세트</a></li>
+						<li><a href="/story/design_plus1.php">Design</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d ">
+					<strong><a href="/exhibition/exhibition_ahyeon.php">사무실 가구</a></strong>
+					<div>
+						<ul>
+						<!--
+						<li><a href="/exhibition/exhibition_main.php">쇼룸</a></li>
+						-->
+						<li><a href="/exhibition/exhibition_ahyeon.php">수도권 (경기, 서울)</a></li>
+						<li><a href="/exhibition/exhibition_busanCenter.php">영남</a></li>
+						<li><a href="/exhibition/exhibition_daejeon.php">충청</a></li>
+						<li><a href="/exhibition/exhibition_gunsan.php">호남</a></li>
+						<li><span class="txt">제주</span></li>
+						<li><a href="/exhibition/exhibition_agent.php">대리점 찾기</a></li>
+						<li><a href="/exhibition/exhibition_opening.php">대리점 개설 안내</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="e ">
+					<strong><a href="/community/community_news.php">어린이 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/community/community_news.php">비츠 소식</a></li>
+						<li><a href="/community/community_qna.php">상담 문의</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="f ">
+					<strong><a href="/company/company_competitive.php">고객센터</a></strong>
+					<div>
+						<ul>
+						<li><a href="/company/company_competitive.php">기업정보</a></li>
+						<li><a href="/company/company_promote.php">사이버홍보실</a></li>
+						<li><a href="/company/company_recruiting.php">인재채용</a></li>
+						<li><a href="/company/company_way1.php">찾아오시는길</a></li>
+						</ul>
+					</div>
+				</li>
 				</ul>
+
 			</div>
 		</div>
 		<div id="mainbanner">메인 배너 박스</div>

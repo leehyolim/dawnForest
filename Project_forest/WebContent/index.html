@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:title" content="한샘 비츠">
+<meta property="og:description" content="한샘비츠, 한샘오피스본사, 한샘비츠 본사, 한샘이만든 사무용가구, 한샘이 만들면 다릅니다.">
+<title>비츠</title>
+<link rel="stylesheet" type="text/css" href="C:/Users/Hyolim/Desktop/project/css/ui.css">
+<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/jquery-1.8.1.min.js"></script>
+<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/navigation.js"></script>
+<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/form.js"></script>
+<script type="text/javascript" src="C:/Users/Hyolim/Desktop/project/js/ui.js"></script>
+<style>
+*{
+	border: black 1px;
+}
+
+</style>
+</head>
+
+
+<script type="text/javascript">
+function getCookie( name )
+{
+var nameOfCookie = name + "=";
+var x = 0;
+while ( x <= document.cookie.length )
+{
+var y = (x+nameOfCookie.length);
+if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 )
+endOfCookie = document.cookie.length;
+return unescape( document.cookie.substring( y, endOfCookie ) );
+ㅋif ( x == 0 )
+break;
+}
+return "";
+}
+
+function popup()
+{
+	if(getCookie("notice") != "1"){
+		window.open("/popup/popup_opening.html", "pop", "left=50,top=50,width=396,height=511,toolbar=no,location=no,directories=no,history=no,resizable=no,status=no,scrollbars=no,menubar=no");
+	}
+
+	if(getCookie("notice1") != "1"){	    
+		window.open("/popup/popup_licence_flot.html", "pop2", "left=150,top=50,width=400,height=660,toolbar=no,location=no,directories=no,history=no,resizable=no,status=no,scrollbars=no,menubar=no");
+	}
+
+	 if(getCookie("notice2") != "1"){	    
+		window.open("/popup/popup_gd_raplas.html", "pop3", "left=250,top=50,width=400,height=655,toolbar=no,location=no,directories=no,history=no,resizable=no,status=no,scrollbars=no,menubar=no");
+	}
+
+}
+</script>
+
+<body id="index" onload="popup()">
+
+<div id="wrap">
+	
+	<!-- header -->
+	
+	<div id="header">
+		<h1><a href="./index.html"><img src="./MainLogo.png" alt="새벽숲" width = "130px"></a></h1>
+
+		<div class="bg">
+			<!-- gnb -->
+			<div class="mGnb">
+				<h2 class="hide">주요메뉴</h2>
+				<ul id="gnbNavi">
+				<li class="a ">
+					<strong><a href="/product/product.php">침실 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/product/workstation.php">침대</a></li>
+                        <li><a href="/product/dormitory.php">화장대</a></li>
+						<li><a href="/product/executive.php">협탁</a></li>
+						<li><a href="/product/soho.php">서랍장</a></li>
+						<li><a href="/product/partition_terra.php">매트리스</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="b ">
+					<strong><a href="/result/office.php">거실 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/result/office.php">거실장</a></li>
+						<li><a href="/result/school.php">소파</a></li>
+						<li><a href="/result/hospital.php">소파테이블</a></li>
+						<li><a href="/result/domitory.php">장식장</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="c ">
+					<strong><a href="/story/story_main.php">주방 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/story/story_interior.php">4인식탁세트</a></li>
+						<li><a href="/story/trend.php">6/8인식탁세트</a></li>
+						<li><a href="/story/design_plus1.php">Design</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d ">
+					<strong><a href="/exhibition/exhibition_ahyeon.php">사무실 가구</a></strong>
+					<div>
+						<ul>
+						<!--
+						<li><a href="/exhibition/exhibition_main.php">쇼룸</a></li>
+						-->
+						<li><a href="/exhibition/exhibition_ahyeon.php">수도권 (경기, 서울)</a></li>
+						<li><a href="/exhibition/exhibition_busanCenter.php">영남</a></li>
+						<li><a href="/exhibition/exhibition_daejeon.php">충청</a></li>
+						<li><a href="/exhibition/exhibition_gunsan.php">호남</a></li>
+						<li><span class="txt">제주</span></li>
+						<li><a href="/exhibition/exhibition_agent.php">대리점 찾기</a></li>
+						<li><a href="/exhibition/exhibition_opening.php">대리점 개설 안내</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="e ">
+					<strong><a href="/community/community_news.php">어린이 가구</a></strong>
+					<div>
+						<ul>
+						<li><a href="/community/community_news.php">비츠 소식</a></li>
+						<li><a href="/community/community_qna.php">상담 문의</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="f ">
+					<strong><a href="/company/company_competitive.php">고객센터</a></strong>
+					<div>
+						<ul>
+						<li><a href="/company/company_competitive.php">기업정보</a></li>
+						<li><a href="/company/company_promote.php">사이버홍보실</a></li>
+						<li><a href="/company/company_recruiting.php">인재채용</a></li>
+						<li><a href="/company/company_way1.php">찾아오시는길</a></li>
+						</ul>
+					</div>
+				</li>
+				</ul>
+				<script type="text/javascript">initNavigation(0);</script>
+			</div>
+			<!-- //gnb -->
+			<div id="gnbSub"></div>
+		</div>
+	</div>
+	<!-- //header -->	<!-- //header -->
+
+
+	<!-- keyvisual -->
+	<div class="mKeymain">
+		<div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+			<ul>
+			<li style="background:url(images/img_keymain5.jpg) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt" style="letter-spacing:-1px;">
+					<strong>MILLI</strong>
+					광폭 규격까지 구성된 넓은 품목군으로 경제성을 최대한 고려하였으며,<br>
+					클립 타입의 손쉬운 체결 방식으로 레이아웃 변경시 효과적으로 대응할 수 있습니다.
+				</div>
+			</li>
+			<li style="background:url(images/img_keymain1.jpg) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>PLUS</strong>
+					합리적인 소비자를 위한 새로운 개념의 오피스 시스템 PLUS.<br>
+					경제적이고 합리적인 오피스는 PLUS로 연출하세요.
+				</div>
+				<!--
+				<div class="txt2">
+					<div class="coverCon"></div>
+					<div class="txtCon">
+						<a href="/exhibition/exhibition_opening.php">
+							<em class="tx1">대리점 개설 안내</em>
+							<strong class="tx2">오피스 그 이상의 공간 – 비츠</strong>
+							한샘비츠와 성공을 함께 할 파트너를 모십니다. 
+						</a>
+					</div>
+				</div>
+				-->
+			</li>
+			<li style="background:url(images/img_keymain2.jpg) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>PLUS-S</strong>
+					슬림한 디자인과 심플한 구성의 PLUS-S 시리즈는<br>
+					작은 규모의 오피스에서도 경제적이고 합리적인 공간을 제공해드립니다.
+				</div>
+			</li>
+			<li style="background:url(images/img_keymain3.jpg) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>NEW VREX</strong><pre></pre>
+					절제된 세련미와 스마트한 기능의 NEW VREX 시리즈는<br>
+					변화에 빠르게 대처할 수 있는 스마트한 워크스테이션 입니다.
+				</div>
+			</li>
+			<li style="background:url(images/img_keymain4.jpg) 50% 0 no-repeat;">
+				<div class="cover"></div>
+				<div class="txt">
+					<strong>LEABEN</strong>
+					리더로서의 삶을 중시합니다.<br>
+					창조적이며 혁신을 추구하는 당신의 성공과 함께합니다.
+				</div>
+			</li>
+			</ul>
+			<p class="cnt"></p>
+		</div>
+		<div class="paging">
+			<a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+			<a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+		</div>
+		<script type="text/javascript">
+		$( document ).ready(function() {
+			var jcarousel = $('.mKeymain .jcarousel');
+			jcarousel
+			.on('jcarousel:reload jcarousel:create', function () {
+				var width = jcarousel.innerWidth();
+				jcarousel.jcarousel('items').css('width', width + 'px');
+			})
+			.jcarousel({
+				animation: 'slow',
+				wrap : 'circular'
+			})
+			/*
+			.jcarouselAutoscroll({
+				auto: .01,
+				interval: 10000,
+				target: '+=1',
+				autostart: true
+			});
+			*/
+			$('.mKeymain .cnt')
+			.on('jcarouselpagination:active', 'a', function() { $(this).addClass('selected'); })
+			.on('jcarouselpagination:inactive', 'a', function() { $(this).removeClass('selected'); })
+			.jcarouselPagination();
+			$('[data-jcarousel]').each(function() {
+				var el = $(this);
+				el.jcarousel(el.data());
+			});
+
+			$('[data-jcarousel-control]').each(function() {
+				var el = $(this);
+				el.jcarouselControl(el.data());
+			});
+			$.ajax({
+				url: "count_prc.php",
+				type: "POST",
+				success: function (res) {			
+				}
+			});					
+		});
+		</script>
+	</div>
+	<!-- keyvisual -->
+	
+	<!-- body -->
+	<div id="body">
+		<div class="bg">
+			
+			<!-- main1 -->
+			<div class="mMain1">
+				<!-- banner -->
+				<div class="mBanner">
+					<p class="txt">가장 오랜 시간을 보내는 곳은<br>가장 편안한 곳이 되어야 합니다.</p>
+				</div>
+				<!-- //banner -->
+				<!-- event
+				<div class="mEvent">
+					<h3>Event</h3>
+					<p class="txt">견적문의 상담 완료한<br> 모든 분들께<br> <strong>스타벅스 아메리카노<br> 교환권을 드립니다.</strong></p>
+					<strong class="tit"><span>상담 및 E-카다로그 신청</span></strong>
+					<dl>
+					<dt>이름</dt>
+					<dd>
+						<input type="text" class="it2" title="이름" value="이름">
+					</dd>
+					<dt>연락처</dt>
+					<dd>
+						<input type="text" class="it2" title="연락처" value="연락처">
+					</dd>
+					<dt>이메일</dt>
+					<dd>
+						<input type="text" class="it2" title="이메일" value="이메일">
+					</dd>
+					</dl>
+					<a href="###" class="btn1">신청</a>
+					<label class="chk">
+						<input type="checkbox" class="styled" name="checkbox" checked="checked">
+						<span class="tx">이벤트 참여를 위한 개인정보 수집 및<br> 활용에 동의합니다.</span>
+					</label>
+					<a href="###" class="btn2">자세히 보기</a>
+				</div>
+				//event -->
+
+				<!-- 오피스 매거진 -->
+				<div class="mOffice">
+					<h3>비츠 매거진</h3>
+					<p class="txt"><em>오피스 환경 변화</em> Change in the Work environment</p>
+					<ul>
+					<li class="a"><span>My office</span></li>
+					<li class="b"><span>My space</span></li>
+					<li class="c"><span>Our space</span></li>
+					<li class="d"><span>Any space</span></li>
+					<li class="e"><span>Any place</span></li>
+					</ul>
+					<a href="/story/story_interior.php" class="link">오피스 매거진 상세페이지 보기</a>
+				</div>
+				<!-- //오피스 매거진 -->
+
+				<!-- New Product -->
+				<div class="mList1 mNProduct hover">
+					<div class="img"><img src="images/img_nproduct.jpg" alt=""></div>
+					<div class="cover"></div>
+					<div class="con">
+						<h3>NEW PRODUCT</h3>
+						<a href="/product/workstation_plus.php">
+							<span class="txt"><em>PLUS series</em> 당신의 오피스를 PLUS 해드립니다.</span>
+						</a>
+					</div>
+				</div>
+				<!-- //New Product -->
+
+				<!-- 전시장 -->
+				<div class="mList1 mExhibt hover">
+					<div class="img"><a href="http://www.hanssemoffice.com/company/company_promote_view_20160324.php" style="padding:0;width:auto;height:auto;"><img src="images/img_echo.jpg" alt="오피스 그 이상의 공간-비츠 : 에코소품 자연을 지키는 작은 시작"></a></div>
+
+					<div class="con">
+						<!--<a href="/company/company_promote_view_20160115.php"></a>-->
+					</div>
+				</div>
+				<!-- //전시장 -->
+
+				<!-- 납품실적 -->
+				<div class="mList1 white mPerfor">
+					<div class="img"><img src="images/img_perfor.jpg" alt=""></div>
+					<div class="cover"></div>
+					<div class="con">
+						<h3>납품실적</h3>
+						<a href="/result/office_mbc.php">
+							<span class="txt"><em>MBC 신사옥</em> 비츠가 만든 신사옥을 만나보세요</span>
+						</a>
+					</div>
+				</div>
+				<!-- //납품실적 -->
+			</div>
+			<!-- //main1 -->
+			
+			
+			<!-- main2 -->
+			<div class="mMain2">
+				<!-- as -->
+				<div class="mAs">
+					<h3>고객 상담 문의</h3>
+					<p class="txt">기업 / 사업자 고객부터 일반 고객까지<br>친절하게 상담을 해드립니다.</p>
+					<dl>
+					<dt class="time">영업시간</dt>
+					<dd class="time">월~금 : 10:00~18:00</dd>
+					<dt class="tel">전화번호</dt>
+					<dd class="tel">02-6470-6251</dd>
+					</dl>
+				</div>
+				<!-- //as -->
+
+				<!-- 소식 -->
+				<div class="mNews">
+					<h3>소식</h3>
+					<div data-jcarousel="true" data-wrap="circular" class="jcarousel">
+						<ul><li id="news_roll"></li></ul>
+					</div>
+					<div class="paging">
+						<a data-jcarousel-control="true" data-target="-=1" href="#" class="jcarousel-control-prev">&lsaquo;</a>
+						<a data-jcarousel-control="true" data-target="+=1" href="#" class="jcarousel-control-next">&rsaquo;</a>
+					</div>
+
+					<script type="text/javascript">
+					$( document ).ready(function() {
+						searchNews();
+					});
+					
+		      function searchNews(){
+		        $.getJSON('community/news_prc.php?cmd=list' + '&pn=1', null, function(data){     
+		          if(data) {
+		            var table = '';
+		            if(data.status[0]=='success'){
+		            	n=0;
+		              $.each(data.result,function(i,element){
+		              	n++;
+		                table +='<div class="row1">';
+		                table +='<a href="community/community_news_view.php?id='+ element.nid + '">' + element.subject + ' ' +  element.wdate + '</a>'
+		                table +='</div>';
+		              });
+		            }
+		            $('#news_roll').html(table);
+								
+								var jcarousel = $('.mNews .jcarousel');
+								jcarousel
+								.on('jcarousel:reload jcarousel:create', function () {
+									var width = jcarousel.innerWidth();
+									jcarousel.jcarousel('items').css('width', width + 'px');
+								})
+								.jcarousel({
+									animation: 'slow',
+									vertical: true,
+									wrap : 'circular'
+								})
+								.jcarouselAutoscroll({
+									auto: .01,
+									interval: 5000,
+									target: '+=1',
+									autostart: true
+								});
+								$('.mNews .cnt')
+								.on('jcarouselpagination:active', 'a', function() { $(this).addClass('selected'); })
+								.on('jcarouselpagination:inactive', 'a', function() { $(this).removeClass('selected'); })
+								.jcarouselPagination();
+								$('[data-jcarousel]').each(function() {
+									var el = $(this);
+									el.jcarousel(el.data());
+								});
+		
+								$('[data-jcarousel-control]').each(function() {
+									var el = $(this);
+									el.jcarouselControl(el.data());
+								});
+								
+		          }
+		        });
+		      }
+					
+					</script>
+				</div>
+				<!-- //소식 -->
+
+				<!-- 대리점 찾기 -->
+				<div class="mAgent">
+					<h3>대리점 찾기</h3>
+					<a href="/exhibition/exhibition_agent.php">
+						<span class="txt">다양한 비츠 제품을<br> 지역별 전문가가 안내해드립니다.</span>
+					</a>
+				</div>
+				<!-- //대리점 찾기 -->
+
+				<!-- E-카달로그 -->
+				<div class="mCatalog">
+					<h3>E-카달로그</h3>
+					<a href="/data/hanssem_office.pdf" target="_blank">
+						<span class="txt">비츠의 제품정보를<br> E-카달로그를 통해<br> 한눈에 확인하실 수 있습니다.</span>
+					</a>
+				</div>
+				<!-- //E-카달로그 -->
+			</div>
+			<!-- //main2 -->
+
+		</div>
+	</div>
+	<!-- //body -->
+
+	<!-- footer -->
+	
+
+	<div id="footer">
+		
+				<div class="con1">
+			<div class="bg">
+				<!-- hanssemoffice.com -->
+				<div class="gLeft">
+					<h3><img src="/images/tit_hanssemoffice.png" alt="HANSSEMVIITZ.COM"></h3>
+					<ul>
+					<li class="a">
+						<strong><a href="/product/product.php">제품</a></strong>
+						<div>
+							<ul>
+							<li><a href="/product/workstation.php">Workstation</a></li>
+                            <li><a href="/product/dormitory.php">DORMITORY</a></li>
+							<li><a href="/product/executive.php">Executive</a></li>
+							<li><a href="/product/soho.php">SOHO</a></li>
+							<li><a href="/product/partition_terra.php">Partition</a></li>
+							<li><a href="/product/conference_consena.php">Conference</a></li>
+							<li><a href="/product/chair_mylo.php">Chair</a></li>
+							<li><a href="/product/sofa_FCF1000Executive.php">Sofa</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="b">
+						<strong><a href="/result/office.php">납품실적</a></strong>
+						<div>
+							<ul>
+							<li><a href="/result/office.php">OFFICE</a></li>
+							<li><a href="/result/school.php">SCHOOL</a></li>
+							<li><a href="/result/hospital.php">HOSPITAL</a></li>
+							<li><a href="/result/domitory.php">DORMITORY</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="c">
+						<strong><a href="/story/story_main.php">비츠 매거진</a></strong>
+						<div>
+							<ul>
+							<li><a href="/story/story_interior.php">비츠 스토리</a></li>
+							<li><a href="/story/trend.php">Trend</a></li>
+							<li><a href="/story/design_plus1.php">Design</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d">
+						<strong><a href="/exhibition/exhibition_ahyeon.php">전시장</a></strong>
+						<div>
+							<ul>
+							<!--
+							<li><a href="/exhibition/exhibition_main.php">쇼룸</a></li>
+							-->
+							<li><a href="/exhibition/exhibition_ahyeon.php">수도권 (경기, 서울)</a></li>
+							<li><a href="/exhibition/exhibition_busanCenter.php">영남</a></li>
+							<li><a href="/exhibition/exhibition_daejeon.php">충청</a></li>
+							<li><a href="/exhibition/exhibition_gunsan.php">호남</a></li>
+							<li><span class="txt">제주</span></li>
+							<li><a href="/exhibition/exhibition_agent.php">대리점 찾기</a></li>
+							<li><a href="/exhibition/exhibition_opening.php">대리점 개설 안내</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="e">
+						<strong><a href="/community/community_news.php">커뮤니티</a></strong>
+						<div>
+							<ul>
+							<li><a href="/community/community_news.php">비츠 소식</a></li>
+							<li><a href="/community/community_qna.php">상담 문의</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="f">
+						<strong><a href="/company/company_competitive.php">회사소개</a></strong>
+						<div>
+							<ul>
+							<li><a href="/company/company_competitive.php">기업정보</a></li>
+							<li><a href="/company/company_promote.php">사이버홍보실</a></li>
+							<li><a href="/company/company_recruiting.php">인재채용</a></li>
+							<li><a href="/company/company_way1.php">찾아오시는길</a></li>
+							</ul>
+						</div>
+					</li>
+					</ul>
+				</div>
+				<!-- //hanssemoffice.com -->
+				<!-- social media -->
+				<div class="gRight">
+					<h3><img src="/images/tit_socialmedia.png" alt="SOCIAL MEDIA"></h3>
+					<ul>
+					<li class="iFacebook"><a href="###">Facebook</a></li>
+					<li class="iTwitter"><a href="###">Twitter</a></li>
+					</ul>
+				</div>
+				<!-- //social media -->
+			</div>
+		</div>
+		
+		<div class="con2">
+			<div class="bg">
+				<strong class="logo"><img src="/images/logo_footer.png" alt="HANSSEM"></strong>
+				<div class="addr">
+					<span class="hidden">
+						고객센터 대표번호 02-6470-6251
+						FAX 02-536-3854
+					</span>
+					<a href="###" class="iPrivacy">개인정보취급방침</a>
+					<a href="###" class="iCenter">고객센터</a> 
+					<span class="hidden">
+						서울특별시 마포구 성암로 179 한샘빌딩 4층
+						대표 김덕신     사업자등록번호 134-81-03236
+						Copyright 2009 Hanssem Effex. All Rights Reserved.
+					</span>
+				</div>
+				<div class="family">
+					<span class="mFamily"><a href="http://www.hanssem.com/" target="_blank">Family Site</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->  
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script> 
+<script type="text/javascript"> 
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_93b1dc1866c";
+if (!_nasa) var _nasa={};
+wcs.inflow("hanssemoffice.com");
+wcs_do(_nasa);
+</script>	<!-- //footer -->
+
+</div>
+
+
+</body>
+</html>
