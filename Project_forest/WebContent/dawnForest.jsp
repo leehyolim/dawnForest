@@ -10,6 +10,8 @@
 div {
 
 	border: solid 1px;
+	
+	
 }
 
 #wrapper {
