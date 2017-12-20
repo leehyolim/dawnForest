@@ -29,7 +29,7 @@
 				<li>메뉴5</li>
 			</ul>
 		</div>
-		<center><img src="./img/logo_edit1.png" id="logo"></center>
+		<center><a href="./dawnForest.jsp"><img src="./img/logo_edit1.png" id="logo"></a></center>
 			<div class="navi">
 				<ul id="gnbNavi">
 				<li class="a ">
@@ -179,8 +179,12 @@
 				<div id="mAs">상담문의</div>
 				<div id="mNews">소식</div>
 				<div id="mBox">미정</div>
-				<div id="mFacebook">페북</div>
-				<div id="mTwitter">트위터</div>
+				<div id="mFacebook">
+				<a href="https://www.facebook.com/"><img src = "./img/facebook_logo.png"></a>
+				</div>
+				<div id="mTwitter">
+				<a href="https://twitter.com/"><img src = "./img/twitter_logo.png"></a>
+				</div>
 			</div>
 		</div>
 		
