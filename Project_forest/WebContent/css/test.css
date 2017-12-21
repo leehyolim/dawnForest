@@ -122,21 +122,20 @@ li {
 }
 
 #mFacebook {
-	width: 150px;
+	width: 60px;
 	height: 60px;
 	float: right;
 	position: relative;
-	top: 30px;
-	right: 20px;
+	
 }
 
 #mTwitter {
-	width: 150px;
+	width: 60px;
 	height: 60px;
-	float: left;
-	position: relative;
-	top: 60px;
-	left: 55px;
+	float: right;
+	position : relative;
+	
+	
 }
 
 
