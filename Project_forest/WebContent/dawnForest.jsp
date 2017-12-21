@@ -11,14 +11,14 @@
 <script src="./js/navigation.js" type="text/javascript" ></script>
 <script src="./js/form.js" type="text/javascript" ></script>
 <script type="text/javascript" src="./js/ui.js"></script>
+
 <style>
 
 </style>
 
 </head>
 <body>
-	<div id="wrapper">
-	
+	<div id="wrapper">	
 		<div id="header">
 		<div id="minimenu">
 			<ul>
@@ -30,79 +30,62 @@
 			</ul>
 		</div>
 		<center><img src="./img/logo_edit1.png" id="logo"></center>
-			<div class="navi">
-				<ul id="gnbNavi">
-				<li class="a ">
-					<strong><a href="/product/product.php">침실 가구</a></strong>
-					<div>
-						<ul>
-						<li><a href="/product/workstation.php">침대</a></li>
-                        <li><a href="/product/dormitory.php">화장대</a></li>
-						<li><a href="/product/executive.php">협탁</a></li>
-						<li><a href="/product/soho.php">서랍장</a></li>
-						<li><a href="/product/partition_terra.php">매트리스</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="b ">
-					<strong><a href="/result/office.php">거실 가구</a></strong>
-					<div>
-						<ul>
-						<li><a href="/result/office.php">거실장</a></li>
-						<li><a href="/result/school.php">소파</a></li>
-						<li><a href="/result/hospital.php">소파테이블</a></li>
-						<li><a href="/result/domitory.php">장식장</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="c ">
-					<strong><a href="/story/story_main.php">주방 가구</a></strong>
-					<div>
-						<ul>
-						<li><a href="/story/story_interior.php">4인식탁세트</a></li>
-						<li><a href="/story/trend.php">6/8인식탁세트</a></li>
-						<li><a href="/story/design_plus1.php">Design</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="d ">
-					<strong><a href="/exhibition/exhibition_ahyeon.php">사무실 가구</a></strong>
-					<div>
-						<ul>
-						<li><a href="/exhibition/exhibition_ahyeon.php">수도권 (경기, 서울)</a></li>
-						<li><a href="/exhibition/exhibition_busanCenter.php">영남</a></li>
-						<li><a href="/exhibition/exhibition_daejeon.php">충청</a></li>
-						<li><a href="/exhibition/exhibition_gunsan.php">호남</a></li>
-						<li><span class="txt">제주</span></li>
-						<li><a href="/exhibition/exhibition_agent.php">대리점 찾기</a></li>
-						<li><a href="/exhibition/exhibition_opening.php">대리점 개설 안내</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="e ">
-					<strong><a href="/community/community_news.php">어린이 가구</a></strong>
-					<div>
-						<ul>
-						<li><a href="/community/community_news.php">비츠 소식</a></li>
-						<li><a href="/community/community_qna.php">상담 문의</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="f ">
-					<strong><a href="/company/company_competitive.php">고객센터</a></strong>
-					<div>
-						<ul>
-						<li><a href="/company/company_competitive.php">기업정보</a></li>
-						<li><a href="/company/company_promote.php">사이버홍보실</a></li>
-						<li><a href="/company/company_recruiting.php">인재채용</a></li>
-						<li><a href="/company/company_way1.php">찾아오시는길</a></li>
-						</ul>
-					</div>
-				</li>
-				</ul>
+		<div id="topMenu">
+			<ul>
+				<li class="topmenuLi">
+				<a href="#" class="menuLink">침실 가구</a>
+					<ul class="submenu">
+						<li><a href="#" class="submenuLink">침대</a></li>
+						<li><a href="#" class="submenuLink">화장대</a></li>
+						<li><a href="#" class="submenuLink">협탁</a></li>
+						<li><a href="#" class="submenuLink">서랍장</a></li>
+						<li><a href="#" class="submenuLink">매트리스</a></li>
+					</ul></li>
+				<li class="topmenuLi">
+				<a href="#" class="menuLink">거실 가구</a>
+					<ul class="submenu">
+						<li><a href="#" class="submenuLink">거실장</a></li>
+						<li><a href="#" class="submenuLink">소파</a></li>
+						<li><a href="#" class="submenuLink">소파테이블</a></li>
+						<li><a href="#" class="submenuLink">장식장</a></li>
+					</ul></li>
+				<li class="topmenuLi">
+				<a href="#" class="menuLink">주방 가구</a>
+					<ul class="submenu">
+						<li><a href="#" class="submenuLink">4인식탁세트</a></li>
+						<li><a href="#" class="submenuLink">6/8인식탁세트</a></li>
+						<li><a href="#" class="submenuLink">Design</a></li>
+					</ul></li>
+				<li class="topmenuLi">
+				<a href="#" class="menuLink">사무실 가구</a>
+					<ul class="submenu">
+						<li><a href="#" class="submenuLink">수도권 (경기, 서울)</a></li>
+						<li><a href="#" class="submenuLink">영남</a></li>
+						<li><a href="#" class="submenuLink">충청</a></li>
+						<li><a href="#" class="submenuLink">호남</a></li>
+						<li><a href="#" class="submenuLink">대리점 찾기</a></li>
+						<li><a href="#" class="submenuLink">대리점 개설 안내</a></li>
+					</ul></li>
+				<li class="topmenuLi">
+				<a href="#" class="menuLink">어린이 가구</a>
+					<ul class="submenu">
+						<li><a href="#" class="submenuLink">비츠 소식</a></li>
+						<li><a href="#" class="submenuLink">상담 문의</a></li>
+					</ul></li>
+				<li class="topmenuLi">
+				<a href="#" class="menuLink">고객센터</a>
+					<ul class="submenu">
+						<li><a href="#" class="submenuLink">기업정보</a></li>
+						<li><a href="#" class="submenuLink">사이버홍보실</a></li>
+						<li><a href="#" class="submenuLink">인재채용</a></li>
+						<li><a href="#" class="submenuLink">찾아오시는길</a></li>
+					</ul></li>
+			</ul>
+	    </div>
 
-			</div>
-		</div>
+
+		
+
 	
 		<!-- 중앙베너 애니메이션부분 시작-->
 		<div class="mainbanner">
